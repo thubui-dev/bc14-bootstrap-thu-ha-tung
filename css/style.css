@@ -1,3 +1,211 @@
-html,body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Jost', sans-serif;
+}
+html, body{
+    background: #f9f7fe;
+    
+}
+
+.title{
+    text-align: center;    
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+.testimonial .title h6{
+    color: red;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.testimonial .title h3{
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.testimonial {
+    display: block;
+    margin: 0;
+    padding: 40px 30px;
+    position: relative; 
+    border: none;
+    text-align: left;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+}
+.testimonial__slider .item{
+    width: 515px;
+    height: 313px;
+    margin-right:20px;
+    padding: 40px 30px;
+    border-radius: 5%;
+    background-color: white;
+    
+    overflow: hidden;
+}
+blockquote {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 1.5em;
+    color:#696969;
+}
+blockquote q::before {
+    font-size: 50px;
+    color: green;
+    line-height: .8;
+    padding-top: 8px;
+    font-weight: 600;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+}
+.testimonial blockquote {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 1.5em;
+    color: #696969;
+}
+.testimonial blockquote q{
+    font-size: 1.5rem;
+    
+}
+q::before {
+    content: open-quote;
+}
+.item__profile{
+    display: flex;
+}
+.item__profile .profile__img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonial__slider .slick-dots li button{
+    width: 30px;
+    height: 15px;
+    border-radius: 25%;
+    margin: 20px;
+}
+.testimonial__slider .slick-dots li button:before{   
+    width: 30px;
+    height: 15px;
+    border-radius: 25%;
+    margin: 20px;
+}
+
+.testimonial__slider .slick-dots li:hover button{
+   background-color: green;
+   padding: 1px 15px;
+}
+.testimonial__slider .slick-dots li:hover button:before{
+    color: green;
+    padding: 1px 15px;
+}
+.testimonial__slider .slick-dots li.slick-active button{
+    background-color: green;
+    padding: 1px 6px;
+}
+.testimonial__slider .slick-dots li.slick-active button:before{
+    color: green;
+    padding: 1px 6px;
+}
+
+/* form */
+.form{
+    background-color: white;
+    padding-bottom: 5rem;
+}
+.form .title{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 30px 50px;
+}
+.form .container .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.form .title h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.form .title p{
+    font-size: 1.2rem;
+}
+.form__content input{
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    background: #fff;
+    height: 60px;
+    width: 30rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: none;
+    border: 1px solid gray;
+}
+.form__content input:focus{
+    background: #fff;
+    border: 1px solid green;
+    box-shadow: none;
+    border-radius:10px;
+}
+.form__content button{
+    height: 60px;
+    width: 130px;
+}
+
+/* footer */
+.footer{
+    background-color: black;
+    color: gray;
+    padding: 30px 20px;
+}
+.footer ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.footer__tilte{
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.footer-list{
+    font-weight: normal;
+    font-size: 16px;
+    color: gray;
+    line-height: 28px;
+}
+.footer-list ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.social__contact ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+}
+.social__contact ul li a:hover{
+    text-decoration: none;
+}
+.footer__sub{
+    text-align: center;
+    margin: 20px 20px;
 }

@@ -134,15 +134,15 @@
 
     <section class="form">
         <div class="container">
-            <div class="row">
-                <div class="title">
+            <div class="row ">
+                <div class="title ">
                     <h3>Stay Update!</h3>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                    <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
                 </div>
-                <div class="form__content">
+                <div class="form__content ">
                     <form action="#" method="post">
                         <input type="email" placeholder="Enter your email...">
-                        <button class="btn btn-lg btn-success">Subscribe</button>
+                        <button class="btn btn-sm btn-md btn-lg btn-success" type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -245,6 +245,18 @@ $('.testimonial__slider').slick({
     slidesToScroll: 2,
     dots: true,
     arrows: false,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 </script>
 <!-- BS4  -->

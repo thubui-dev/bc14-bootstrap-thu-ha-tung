@@ -143,12 +143,12 @@ q::before {
     font-size: 1.2rem;
 }
 .form__content input{
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 10px;
-    padding: 0px 20px;
+    padding: 12px 35px;
     height: 60px;
     background: #fff;
-    height: 60px;
+    height: 53px;
     width: 30rem;
     padding-left: 20px;
     padding-right: 20px;
@@ -162,8 +162,20 @@ q::before {
     border-radius:10px;
 }
 .form__content button{
-    height: 60px;
-    width: 130px;
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 29px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
+/* responsive */
+@media screen and (max-width: 767.98px) {
+    .form__content button{
+        width: 95%;
+        margin-top: 10px;
+    }
 }
 
 /* footer */

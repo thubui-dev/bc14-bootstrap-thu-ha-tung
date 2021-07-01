@@ -776,6 +776,10 @@ q::before {
     margin: 20px 20px;
 }
 
+.footer__sub a {
+    color: #f53626;
+}
+
 /* Back to top  */
 
 .backToTop {
@@ -818,10 +822,16 @@ q::before {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+    .card-top1 {
+        width: 309px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .card-top1 {
-        width: 150px;
-        left: 10px;
+        width: 227px;
+        left: -14px;
         margin-top: 4px;
         height: 238px;
     }
@@ -844,7 +854,7 @@ q::before {
     }
 
     .card-top1 {
-        width: 418px;
+        width: 312px;
         left: -15px;
         margin-top: 42px; 
         height: 200px;

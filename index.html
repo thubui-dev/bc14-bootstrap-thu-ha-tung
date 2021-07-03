@@ -73,6 +73,21 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form> -->
                 </div>
+                <!-- switch light or dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="fa fa-sun"></i>
+                                    <i class="fa fa-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- end for switch theme -->
             </nav>
         </div>
     </header>
@@ -598,6 +613,18 @@ $('.testimonial__slider').slick({
     slidesToScroll: 2,
     dots: true,
     arrows: false,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 </script>
 <!-- BS4  -->
@@ -617,7 +644,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- backtotop  -->
 <script src="./js/util.js"></script>
 <script src="./js/main.js"></script>
-
+<script src="./js/theme-change.js"></script>
 </body>
 </html>
 
